@@ -7,11 +7,11 @@ We are looking for an experienced frontend engineer which is very familiar with 
 Now, before we start. Let's apply the algorithm of success:
 
 ```js
-while(noSuccess) {
-    tryAgain();
-    if(Dead) {
-        break;
-    }
+while (noSuccess) {
+  tryAgain();
+  if (Dead) {
+    break;
+  }
 }
 ```
 
@@ -51,10 +51,12 @@ Please refer to the server [README](server/README.md) file in the root directory
 ## Requirements
 
 1. **Data Fetching with GraphQL**:
+
    - Fetch a list of loan products using a GraphQL query.
    - Display the loan products in a user-friendly format shown in the attached Figma design.
 
 2. **Form Submission with REST API**:
+
    - Implement a form that allows users to apply for a loan.
    - Submit the form data to a REST API endpoint.
 
@@ -68,6 +70,7 @@ Please refer to the server [README](server/README.md) file in the root directory
 1. **Setup**: All the resources you require to do this assessment will be provided along with this README.
 
 2. **GraphQL Data Fetching**:
+
    - Create a GraphQL query to fetch the following loan product data:
      - `id`
      - `name`
@@ -76,6 +79,7 @@ Please refer to the server [README](server/README.md) file in the root directory
    - Display the fetched loan products on the homepage.
 
 3. **Form Submission**:
+
    - Create a form that includes the following fields:
      - Full Name
      - Email Address
@@ -86,6 +90,7 @@ Please refer to the server [README](server/README.md) file in the root directory
    - Handle the response from the API and display a success or error message to the user.
 
 4. **Bonus**:
+
    - Implement a loading spinner or some form of feedback while data is being fetched or the form is being submitted.
    - Add error handling for both the GraphQL query and the REST API call.
    - Use TypeScript to add type safety to your application.
@@ -94,6 +99,7 @@ Please refer to the server [README](server/README.md) file in the root directory
    - Recording of your project
 
 5. **Submission**:
+
    - Ensure your code is well-documented and formatted.
    - Push your code to your GitHub repository.
    - Provide a link to your repository and a brief description of your approach.
@@ -123,3 +129,31 @@ Please refer to the server [README](server/README.md) file in the root directory
 - Have fun!
 
 Good luck! We look forward to reviewing your application.
+
+## Get started
+
+1. Install dependencies
+
+   ```bash
+   yarn
+   ```
+
+2. Start the app
+
+   ```bash
+    yarn start
+   ```
+
+   Please Note:
+
+3. I added CORS to the python server code to enable browser acces from an url
+4. Created custom hooks associated with each functionality
+5. Created helper functions for code organization and future code re-use
+6. generarted graphql types
+7. Due to time i could not do the following and some improvements will be needed:
+   - set up Redux library or context API for state management to handle all the API data
+   - Create login instance (mock) on the front end and server side since this is a finance application and needs authenticated users when doing post requests.
+   - create custom styles for possible re-use
+   - Including errror boundaries for code robustness
+   - Custom loader inline with company colors
+   - put global constants for font size, colors as well as strings in one place for easy debugging and possible re-use.
